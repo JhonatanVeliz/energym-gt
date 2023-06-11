@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | EnerGym</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Quicksand:wght@300&family=Rajdhani:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/globales.css">
+    <link rel="stylesheet" href="./css/registro.css">
+
+    <link rel="shortcut icon" href="./assets/icon- copia.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div class="contacto">
+        <nav class="header__nav nav container">
+            <div class="nav__icon">
+
+                <a href="./index.html">
+                    <img src="./assets/icon- copia.png" alt="icono de la marca" class="nav__img">
+                </a>
+
+            </div>
+
+            <button class="menu__icon">
+                <img src="./assets/appear.png" alt="icono de apertura del menu">
+            </button>
+
+            <div class="nav__links nav__links--header" id="nav">
+                <button class="menu__icon menu__icon--clouse">
+                    <img src="./assets/clouse.png" alt="icono de cierre del menu">
+                </button>
+
+                <a href="./index.html" class="nav__link nav__link--header">Inicio</a>
+                <a href="./planes.html" class="nav__link nav__link--header">Planes</a>
+                <a href="./registro.html" class="nav__link nav__link--header">Registro</a>
+            </div>
+        </nav>
+        <main class="container">
+            <form action="" class="form" id="form">
+                <h2 class="subtitle">Registrarme</h2>
+
+                <p class="result" id="alert"></p>
+
+
+                <label for="name" class="label">Nombre:</label>
+                <input type="text" id="name" class="input" placeholder="Tu Nombre:">
+
+                <label for="phone" class="label">Número de Tel:</label>
+                <input type="number" id="phone" class="input" placeholder="Tu número de celular">
+
+                <label for="plan" class="label">Plan:</label>
+                <select name="" id="plan" class="plan">
+                    <option class="option" value="" selected disabled>Plan</option>
+                    <option class="option" value="Gimnasia">Gimnasia</option>
+                    <option class="option" value="Team">Team</option>
+                    <option class="option" value="Personal">Personal</option>
+                </select>
+
+                <input type="submit" value="Enviar" class="btn" id="btn-submit">
+
+            </form>
+        </main>
+    </div>
+
+    
+    <footer class="footer">
+        <nav class="container nav footer__nav">
+            <p class="copy text">&copy; Todos los Derechos Reservados 2023</p>
+
+            <div class="nav__links nav__links--footer">
+
+                <a href="#" class="footer__icon footer__icon--f"><img src="./assets/facebook.png" alt="icono que redirecciona a la pagina web oficial de facebook" loading="lazy"></a>
+
+                <a href="#" class="footer__icon footer__icon--w"><img src="./assets/whatsapp.png" alt="icno que redirecciona a la pagina oficial web de whatsapp de redsocial" loading="lazy"></a>
+
+                <a href="#" class="footer__icon footer__icon--i"><img src="./assets/instagram.png" alt="icno que lleva directamente a mi red social de instagram" loading="lazy"></a>
+            </div>
+
+        </nav>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/get-datos-plan.js"></script>
+    <script src="./js/formulario.js"></script>
+</body>
+
+</html>

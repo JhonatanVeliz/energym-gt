@@ -1,0 +1,85 @@
+/* Customproperties */
+:root{
+    --font-nav: 'Poppins', sans-serif;
+    --color-white: #e3e1e1;
+    --color-black: #171616;
+    --color-red: rgb(169, 17, 17);
+    --font-title: 'Rajdhani', sans-serif;
+    --hero-text: 'Poppins', sans-serif;
+}
+.planes{
+    background: url(../assets/clases-bk.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    max-height: auto;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+.cards{
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+.card{
+    padding: 1.5rem;
+    background-color: #00000098;
+    border-radius: 1rem;
+    transition: transform .3s linear;
+}
+.card:hover{
+    box-shadow: 0px 0px 5px 1px #fff;
+    transform: scale(1.03);
+}
+.card__img{
+    width: 100%;
+    height: 20rem;
+}
+.card__subtitle{
+    color: var(--color-white);
+}
+.card__text{
+    text-align: center;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    color: var(--color-white);
+    padding: 1.5rem;
+    background-color: rgb(5, 52, 207);
+    width: 15rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: .5rem;
+    transition: .3s linear;
+    cursor: pointer;
+    font-family: var(--font-nav);
+}
+.link:hover{
+    transform: scale(1.1);
+}
+
+                    /* MEDIAQUERYS */
+@media screen and (max-width: 870px) {
+    .box{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .box{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+    }
+    .card__img{
+        overflow: hidden;
+    }
+    .cards{
+        padding-bottom: 2rem;
+    }
+}
+

@@ -1,0 +1,109 @@
+:root{
+    --font-nav: 'Poppins', sans-serif;
+    --color-white: #e3e1e1;
+    --color-black: #171616;
+    --color-red: rgb(169, 17, 17);
+    --font-title: 'Rajdhani', sans-serif;
+    --hero-text: 'Poppins', sans-serif;
+}
+
+.contacto{
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+    background: url(../assets/bk-registro.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.subtitle{
+    color: var(--color-white);
+    font-size: 3rem;
+}
+.form{
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    background-color: #000000e9;
+    width: 90%;
+    max-width: 40rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 1rem;
+}
+.label{
+    text-align: start;
+    color: var(--color-white);
+    font-family: var(--font-nav);
+    font-weight: 200;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+.input{
+    width: 100%;
+    padding: 1.3rem;
+    font-family: var(--font-nav);
+    font-weight: 200;
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid #0464ff66;
+}
+.plan{
+    background-color: #0464ff93;
+    color: var(--color-white);
+    border: 1px solid #0464ff66;
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-family: var(--font-nav);
+    font-weight: 200;
+    cursor: pointer;
+}
+.option{
+    background-color: #171616;
+}
+
+.btn{
+    background-color: var(--color-red);
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .3rem;
+    margin: 3rem auto 0 auto;
+    color: var(--color-white);
+    font-family: var(--font-nav);
+    font-weight: 200;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.result{
+    transition: .3s linear;
+    display: block;
+    padding: 1rem 0;
+    background-color: var(--color-red);
+    border-radius: .3rem;
+    color: var(--color-white);
+    font-family: var(--font-nav);
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: none;
+}
+.resultSee{
+    display: block;
+    animation: resultSee .5s alternate;
+}
+
+@keyframes resultSee {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+}
